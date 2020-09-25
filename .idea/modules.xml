@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/SubjectTimetable.iml" filepath="$PROJECT_DIR$/SubjectTimetable.iml" />
       <module fileurl="file://$PROJECT_DIR$/TimetableView/TimetableView.iml" filepath="$PROJECT_DIR$/TimetableView/TimetableView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/guetClassSchedule.iml" filepath="$PROJECT_DIR$/.idea/modules/guetClassSchedule.iml" group="guetClassSchedule" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TimetableView/guetClassSchedule-TimetableView.iml" filepath="$PROJECT_DIR$/.idea/modules/TimetableView/guetClassSchedule-TimetableView.iml" group="guetClassSchedule/TimetableView" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/guetClassSchedule-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/guetClassSchedule-app.iml" group="guetClassSchedule/app" />
     </modules>
   </component>
 </project>
