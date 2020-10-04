@@ -9,10 +9,6 @@
         android:icon="@drawable/iv2_p"
         android:title="成绩" />
     <item
-        android:id="@+id/navigation_notifications"
-        android:icon="@drawable/iv3_p"
-        android:title="刷课" />
-    <item
         android:id="@+id/navigation_person"
         android:icon="@drawable/iv4_p"
         android:title="更多" />

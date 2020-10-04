@@ -1,80 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".F3">
-<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    tools:context=".F3">
+
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="@null"
-        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:translationZ="1dp">
-
-        </RelativeLayout>
-
-    </LinearLayout>
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:gravity="center">
-
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="50dp"
-            android:text="输入课程代码" />
-
-        <FrameLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="90dp"
-            android:gravity="center"
-            android:id="@+id/FL_p">
-
-            <EditText
-                android:id="@+id/courseNum"
-                android:layout_width="fill_parent"
-                android:layout_height="50dp"
-                android:inputType="text"
-                android:maxLength="20"
-                android:paddingLeft="55dp"
-                android:paddingRight="60dp"/>
-
-        </FrameLayout>
+            android:src="@drawable/guet" />
 
         <Button
-            android:id="@+id/select"
+            android:id="@+id/button1"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="160dp"
+            android:layout_height="wrap_content"
+            android:text="桂林电子科技大学"
+            android:background="@color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="教务系统" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="学分制教务系统" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="学费查询" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="教务系统（外网）" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="CET"
+            android:textSize="36dp"
             android:gravity="center"
-            android:text="开始"
-            android:textColor="@color/white"
-            android:textSize="15dp" />
+            android:textColor="@color/app_blue2"/>
 
-    </RelativeLayout>
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="四六级报名" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:text="" />
 
-    <TextView
-        android:id="@+id/choice_result"
-        android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:text="TextView" />
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="四六级成绩查询" />
 
-</LinearLayout>
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

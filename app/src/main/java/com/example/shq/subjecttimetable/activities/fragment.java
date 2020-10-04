@@ -10,7 +10,6 @@ import android.view.MenuItem;
 
 import com.example.shq.subjecttimetable.F2;
 import com.example.shq.subjecttimetable.F3;
-import com.example.shq.subjecttimetable.F4;
 import com.example.shq.subjecttimetable.R;
 
 import java.util.ArrayList;
@@ -59,7 +58,6 @@ public class fragment extends AppCompatActivity  {
         list.add(TestFragment.newInstance());
         list.add(F2.newInstance());
         list.add(F3.newInstance());
-        list.add(F4.newInstance());
         viewPagerAdapter.setList(list);
 
     }
@@ -76,11 +74,8 @@ public class fragment extends AppCompatActivity  {
                 case R.id.navigation_dashboard:
                     viewPager.setCurrentItem(1);
                     return true;
-                case R.id.navigation_notifications:
-                    viewPager.setCurrentItem(2);
-                    return true;
                 case R.id.navigation_person:
-                    viewPager.setCurrentItem(3);
+                    viewPager.setCurrentItem(2);
                     return true;
             }
             return false;

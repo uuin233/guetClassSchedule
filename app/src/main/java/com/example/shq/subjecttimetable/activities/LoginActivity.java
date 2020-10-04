@@ -134,7 +134,7 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void saveFromResponse(HttpUrl url, List<Cookie> cookies) {
                         cookieStore.put(url, cookies);
-                        cookieStore.put(HttpUrl.parse("http://xk.cacacai.cn:8080/student/public/login.asp"), cookies);
+                        cookieStore.put(HttpUrl.parse("http://bkjw2.guet.edu.cn/student/public/login.asp"), cookies);
                         Log.d("test","加载到cookie");
                         /*for(Cookie cookie:cookies){
                             System.out.println("cookie Name:"+cookie.name());
@@ -143,7 +143,7 @@ public class LoginActivity extends AppCompatActivity {
                     }
                     @Override
                     public List<Cookie> loadForRequest(HttpUrl url) {//登陆页没有cookie
-                        List<Cookie> cookies = cookieStore.get(HttpUrl.parse("http://xk.cacacai.cn:8080/student/public/login.asp"));
+                        List<Cookie> cookies = cookieStore.get(HttpUrl.parse("http://bkjw2.guet.edu.cn/student/public/login.asp"));
                         /*if(cookies==null){
                             System.out.println("没加载到cookie");
                         }*/
@@ -177,7 +177,7 @@ public class LoginActivity extends AppCompatActivity {
                 sharedPref.putString("username", username);
                 sharedPref.putString("password", password);
                 RequestBody formBody1 = new FormBody.Builder()
-                        .add("term", "2017-2018_2")
+                        .add("term", "2020-2021_1")
                         .build();
                 Request request1 = new Request.Builder()
                         .url(getApplicationContext().getString(R.string.url_course))
