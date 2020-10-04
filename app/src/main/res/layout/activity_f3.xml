@@ -66,13 +66,6 @@
             android:layout_height="10dp"
             android:text="" />
 
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:text="教务系统（外网）" />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="20dp"
@@ -104,6 +97,27 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:text="四六级成绩查询" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="帮助"
+            android:textSize="36dp"
+            android:gravity="center"
+            android:textColor="@color/app_blue2"/>
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="关于" />
 
     </LinearLayout>
 

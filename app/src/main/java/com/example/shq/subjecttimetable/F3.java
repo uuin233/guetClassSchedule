@@ -17,7 +17,6 @@ public class F3 extends Fragment {
     private String web4="http://cwcx.guet.edu.cn/xfzxqcx/Account/Login?ReturnUrl=%2fxfzxqcx%2fVXSXM";
     private String web5="https://passport.etest.net.cn/CETLogin?ReturnUrl=http://cet.etest.net.cn/Home/VerifyPassport/?LoginType=0/";
     private String web6="http://cet.neea.edu.cn/cet/";
-    private String web7="http://xk.cacacai.cn:8080/student/public/login.asp/";
 
     private Button button1,button2,button3,button4,button5,button6,button7;
     public static F3 newInstance() {
@@ -101,8 +100,7 @@ public class F3 extends Fragment {
             @Override
             public void onClick(View v)
             {
-                Intent sIntent = new Intent(getActivity(), Web1.class);
-                sIntent.putExtra(Web1.RETURN_INFO, web7);
+                Intent sIntent = new Intent(getActivity(), AboutActivity.class);
                 startActivity(sIntent);
             }
         });

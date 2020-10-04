@@ -12,8 +12,9 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/ic_logo"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".AboutActivity"></activity>
         <activity android:name=".activities.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,12 +23,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.CourseTableActivity" />
-        <activity android:name=".activities.TestFragment" />
         <activity android:name=".activities.CourseActivity" />
-        <activity android:name=".F3" />
         <activity android:name=".activities.fragment" />
         <activity android:name=".Web1" />
-        <activity android:name=".F2" />
         <activity android:name=".showScore" />
     </application>
 
