@@ -59,7 +59,6 @@ public class fragment extends AppCompatActivity  {
         list.add(F2.newInstance());
         list.add(F3.newInstance());
         viewPagerAdapter.setList(list);
-
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {

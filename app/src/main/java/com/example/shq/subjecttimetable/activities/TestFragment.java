@@ -81,11 +81,11 @@ public class TestFragment extends Fragment implements OnSubjectItemClickListener
             View view = inflater.inflate(R.layout.activity_course_table, container, false);
             moreLayout = (LinearLayout) view.findViewById(R.id.id_more);
             moreLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showPopmenu();
-            }
-        });
+                @Override
+                public void onClick(View v) {
+                    showPopmenu();
+                }
+            });
             backLayout = (LinearLayout) view.findViewById(R.id.id_back);
             backLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -94,8 +94,8 @@ public class TestFragment extends Fragment implements OnSubjectItemClickListener
                     System.exit(0);
                 }
             });
-        sp_week=(NiceSpinner)view.findViewById(R.id.sp_week);
-        sp_week.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            sp_week=(NiceSpinner)view.findViewById(R.id.sp_week);
+            sp_week.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 boolean isCurWeek=false;

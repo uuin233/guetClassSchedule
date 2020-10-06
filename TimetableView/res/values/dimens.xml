@@ -5,7 +5,7 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="lineItemMar1">56dp</dimen> 
     <dimen name="lineItemMar2">57dp</dimen> 
-	<dimen name="weekItemHeight">55dp</dimen>  
+	<dimen name="weekItemHeight">55dp</dimen>
     <dimen name="weekItemMarTop">3dp</dimen>  
     <dimen name="weekItemMarLeft">3dp</dimen> 
     <dimen name="headHeight">50dp</dimen> 

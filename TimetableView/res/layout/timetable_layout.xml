@@ -214,63 +214,54 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
                                 android:layout_marginTop="@dimen/lineItemMar1"
-                                android:background="@drawable/line_dash_style"
                                 android:layerType="software" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
                                 android:layout_marginTop="@dimen/lineItemMar2"
-                                android:background="@drawable/line_dash_style"
                                 android:layerType="software" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
                                 android:layout_marginTop="@dimen/lineItemMar2"
-                                android:background="@drawable/line_dash_style"
                                 android:layerType="software" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
                                 android:layout_marginTop="@dimen/lineItemMar2"
-                                android:background="@drawable/line_dash_style"
                                 android:layerType="software" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
                                 android:layout_marginTop="@dimen/lineItemMar2"
-                                android:background="@drawable/line_dash_style"
                                 android:layerType="software" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
                                 android:layout_marginTop="@dimen/lineItemMar2"
-                                android:background="@drawable/line_dash_style"
                                 android:layerType="software" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
                                 android:layout_marginTop="@dimen/lineItemMar2"
-                                android:background="@drawable/line_dash_style"
                                 android:layerType="software" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
                                 android:layout_marginTop="@dimen/lineItemMar2"
-                                android:background="@drawable/line_dash_style"
                                 android:layerType="software" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
                                 android:layout_marginTop="@dimen/lineItemMar2"
-                                android:background="@drawable/line_dash_style"
                                 android:layerType="software" />
 
                             <TextView
@@ -278,7 +269,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
                                 android:layout_marginTop="@dimen/lineItemMar2"
-                                android:background="@drawable/line_dash_style"
                                 android:layerType="software"
                                 android:visibility="gone" />
 
@@ -287,7 +277,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
                                 android:layout_marginTop="@dimen/lineItemMar2"
-                                android:background="@drawable/line_dash_style"
                                 android:layerType="software"
                                 android:visibility="gone" />
                         </LinearLayout>
