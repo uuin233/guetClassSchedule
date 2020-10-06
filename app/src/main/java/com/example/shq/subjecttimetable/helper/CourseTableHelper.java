@@ -96,7 +96,7 @@ public class CourseTableHelper {
     public static List<MySubjectBean> htmlStringToMySubjectBeanList(String str){
         //实验课list
         ArrayList<String> listExp=getAllSatisfyStr(str,
-                "<tr><td align=center>(.*?)</td><td align=center>(.*?)</td><td align=center>(.*?)</td><td align=center>(.*?)</td></tr>");
+                "<tr><td align=center>(.*?)</td><td align=center>(.*?)</td><td align=center>(.*?)</td><td align=center>(.*?)</td><td align=center>(.*?)</td><td align=center>(.*?)</td><td align=center>(.*?)</td></tr>");
 
         //课程对应教师list
         ArrayList<String> listTea=getAllSatisfyStr(str,
