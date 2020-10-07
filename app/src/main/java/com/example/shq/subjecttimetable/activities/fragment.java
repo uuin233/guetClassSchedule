@@ -1,5 +1,6 @@
 package com.example.shq.subjecttimetable.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -11,6 +12,7 @@ import android.view.MenuItem;
 import com.example.shq.subjecttimetable.F2;
 import com.example.shq.subjecttimetable.F3;
 import com.example.shq.subjecttimetable.R;
+import com.example.shq.subjecttimetable.helper.SharedPref;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,11 +22,19 @@ public class fragment extends AppCompatActivity  {
     private ViewPagerAdapter viewPagerAdapter;
     private ViewPager viewPager;
     private MenuItem menuItem;
+    public SharedPref sharedPref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment);
+
+        sharedPref = SharedPref.getInstance(getApplicationContext());
+        if (sharedPref.getString("username",null) == null) {
+            Intent intent=new  Intent();
+            intent.setClass(getApplicationContext(), LoginActivity.class);
+            startActivity(intent);
+        }
 
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
@@ -54,11 +64,13 @@ public class fragment extends AppCompatActivity  {
         });
         viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(viewPagerAdapter);
-        List<Fragment> list = new ArrayList<>();
-        list.add(TestFragment.newInstance());
-        list.add(F2.newInstance());
-        list.add(F3.newInstance());
-        viewPagerAdapter.setList(list);
+        if (sharedPref.getString("username",null) != null) {
+            List<Fragment> list = new ArrayList<>();
+            list.add(TestFragment.newInstance());
+            //list.add(F2.newInstance());
+            list.add(F3.newInstance());
+            viewPagerAdapter.setList(list);
+        }
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -70,11 +82,11 @@ public class fragment extends AppCompatActivity  {
                 case R.id.navigation_home:
                     viewPager.setCurrentItem(0);
                     return true;
-                case R.id.navigation_dashboard:
-                    viewPager.setCurrentItem(1);
-                    return true;
+//                case R.id.navigation_dashboard:
+//                    viewPager.setCurrentItem(1);
+//                    return true;
                 case R.id.navigation_person:
-                    viewPager.setCurrentItem(2);
+                    viewPager.setCurrentItem(1);
                     return true;
             }
             return false;
