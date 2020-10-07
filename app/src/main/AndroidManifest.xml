@@ -15,16 +15,15 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".AboutActivity"></activity>
-        <activity android:name=".activities.LoginActivity">
+        <activity android:name=".activities.LoginActivity"/>
+        <activity android:name=".activities.CourseTableActivity" />
+        <activity android:name=".activities.CourseActivity" />
+        <activity android:name=".activities.fragment" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.CourseTableActivity" />
-        <activity android:name=".activities.CourseActivity" />
-        <activity android:name=".activities.fragment" />
         <activity android:name=".Web1" />
         <activity android:name=".showScore" />
     </application>

@@ -114,8 +114,6 @@ public class TestFragment extends Fragment implements OnSubjectItemClickListener
 /*        String str=sharedPref.getString("courseStr",null);//获取登录成功时存的课表html页面String
         mySubjectBeans= htmlStringToMySubjectBeanList(str);//解析String*/
         myDbHelper=new MyDbOpenHelper(this.getActivity());
-        String t=myDbHelper.getUser(sharedPref.getString("username",null),
-                sharedPref.getString("password",null));
 
         int cW=sharedPref.getInt("CurWeek",-1);
         int tCW=sharedPref.getInt("TimeCurWeek",-1);

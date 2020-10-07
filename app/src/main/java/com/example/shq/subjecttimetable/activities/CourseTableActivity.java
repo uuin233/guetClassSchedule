@@ -250,7 +250,10 @@ public class CourseTableActivity extends AppCompatActivity implements OnSubjectI
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.top0:
-                        updateCourseTable();
+                        //updateCourseTable();
+                        Intent intent=new  Intent();
+                        intent.setClass(CourseTableActivity.this,LoginActivity.class);
+                        startActivity(intent);
                         break;
                     case R.id.top1:
                         setCurWeek();

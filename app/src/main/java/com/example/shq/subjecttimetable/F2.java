@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.shq.subjecttimetable.activities.LoginActivity;
+import com.example.shq.subjecttimetable.activities.fragment;
 import com.example.shq.subjecttimetable.helper.CourseTableHelper;
 import com.example.shq.subjecttimetable.helper.SharedPref;
 import com.example.shq.subjecttimetable.helper.ToastHelper;
@@ -53,8 +55,13 @@ public class F2 extends Fragment {
         TextView textView2=(TextView)view.findViewById(R.id.textView2);
         TextView textView3=(TextView)view.findViewById(R.id.textView3);
         sharedPref = SharedPref.getInstance(getActivity().getApplicationContext());
-        showname(textView1,textView2);
-
+        if (sharedPref.getString("username",null) == null) {
+            Intent intent=new  Intent();
+            intent.setClass(getContext(), LoginActivity.class);
+            startActivity(intent);
+        } else {
+            showname(textView1, textView2);
+        }
         textView3.setText(" "+sharedPref.getString("username",null));
         button1=(Button)view.findViewById(R.id.button);
         button2=(Button)view.findViewById(R.id.button2);
@@ -110,7 +117,7 @@ public class F2 extends Fragment {
                     @Override
                     public void saveFromResponse(HttpUrl url, List<Cookie> cookies) {
                         cookieStore.put(url, cookies);
-                        cookieStore.put(HttpUrl.parse("http://xk.cacacai.cn:8080/student/public/login.asp"), cookies);
+                        cookieStore.put(HttpUrl.parse("http://bkjw2.guet.edu.cn/student/public/login.asp"), cookies);
                         for(Cookie cookie:cookies){
                             System.out.println("cookie Name:"+cookie.name());
                             System.out.println("cookie Path:"+cookie.path());
@@ -119,7 +126,7 @@ public class F2 extends Fragment {
 
                     @Override
                     public List<Cookie> loadForRequest(HttpUrl url) {
-                        List<Cookie> cookies = cookieStore.get(HttpUrl.parse("http://xk.cacacai.cn:8080/student/public/login.asp"));
+                        List<Cookie> cookies = cookieStore.get(HttpUrl.parse("http://bkjw2.guet.edu.cn/student/public/login.asp"));
                         if(cookies==null){
                             Log.d("test","No cookies");
                         }
